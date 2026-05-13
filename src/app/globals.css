@@ -1,26 +1,74 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Brand Colors */
+  --color-lake-blue-900: #0f2238;
+  --color-lake-blue-800: #1b3a5c;
+  --color-lake-blue-700: #234d7a;
+  --color-lake-blue-600: #2b6097;
+  --color-lake-blue-100: #dce8f4;
+  --color-lake-blue-50:  #eef4fb;
+
+  --color-evergreen-800: #1e3d18;
+  --color-evergreen-700: #2d5a27;
+  --color-evergreen-600: #3c7233;
+  --color-evergreen-100: #d4e8d0;
+
+  --color-charcoal-900: #141414;
+  --color-charcoal-800: #1c1c1c;
+  --color-charcoal-700: #2e2e2e;
+  --color-charcoal-500: #555555;
+  --color-charcoal-400: #777777;
+
+  --color-stone-100: #f5f2ed;
+  --color-stone-200: #ede9e2;
+  --color-stone-300: #d6d0c8;
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Spacing scale extensions */
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-26: 6.5rem;
+  --spacing-30: 7.5rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background-color: var(--color-stone-100);
+    color: var(--color-charcoal-800);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .container-base {
+    width: 100%;
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
 }
