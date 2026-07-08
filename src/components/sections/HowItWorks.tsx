@@ -7,19 +7,19 @@ const steps = [
     number: "01",
     icon: FileText,
     title: "Request a Quote",
-    desc: "Fill out a short form with your group size, product ideas, and timeline. We'll reply fast with a clear, no-surprise quote.",
+    desc: "Fill out a short form with your group size, what you are thinking, and when you need it. We get back to you quickly with a clear, no-commitment quote.",
   },
   {
     number: "02",
     icon: Palette,
     title: "Approve Your Design",
-    desc: "We handle the artwork and send proofs for your review. Nothing goes to print until you're happy with how it looks.",
+    desc: "We handle the artwork and send proofs for your review. Nothing goes to print until you sign off on exactly how it looks.",
   },
   {
     number: "03",
     icon: Package,
-    title: "Receive Your Order",
-    desc: "Pick up locally in the Twin Cities or have it shipped to you. Quality apparel, on time, ready for your group.",
+    title: "Pick Up or Ship",
+    desc: "Pick up locally in the Twin Cities or have it shipped to you. On time, outfitted right, no surprises.",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function HowItWorks() {
             Ordering Is Simple
           </h2>
           <p className="text-charcoal-500 max-w-xl mx-auto leading-relaxed">
-            We made the process straightforward on purpose. You shouldn&apos;t need to be an apparel expert to get great gear.
+            Three steps. One point of contact. You should not need to be an apparel expert to get your group outfitted right.
           </p>
         </div>
 

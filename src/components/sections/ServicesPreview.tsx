@@ -5,17 +5,17 @@ const featured = [
   {
     icon: Printer,
     title: "Screen Printing",
-    desc: "Bold, durable prints built for large orders. Perfect for teams, events, and branded gear that needs to last.",
+    desc: "Bold, durable prints for large orders. The go-to for t-shirts and hoodies where you need a sharp look at a strong per-piece price.",
   },
   {
     icon: Scissors,
     title: "Embroidery",
-    desc: "Professional embroidery for polos, hats, and outerwear. The finish that makes a group look polished and put together.",
+    desc: "A polished finish for polos, hats, and outerwear. Embroidery is what makes a staff shirt actually look like a staff shirt.",
   },
   {
     icon: Palette,
     title: "Design Help",
-    desc: "Not sure where to start? We guide you from concept to final proof. No design experience needed.",
+    desc: "No design? No problem. We start from scratch, clean up a logo, or turn a rough idea into something print-ready.",
   },
 ];
 

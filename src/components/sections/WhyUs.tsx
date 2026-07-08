@@ -4,22 +4,22 @@ const reasons = [
   {
     icon: MapPin,
     title: "Made Locally in the Twin Cities",
-    desc: "Every order is produced right here in Minnesota. Real accountability and real quality control.",
+    desc: "Every order is produced right here in the Twin Cities. You get a real point of contact, local pickup, and quality you can check before anything ships.",
   },
   {
     icon: Package,
     title: "Built for Bulk Orders",
-    desc: "We specialize in larger, organized orders and keep pricing fair. The bigger the order, the better the per-piece rate.",
+    desc: "We built this business around organized group orders. Pricing gets meaningfully better at 100, 250, and 500+ pieces. Bulk is where we do our best work.",
   },
   {
     icon: MessageCircle,
     title: "Simple, Guided Ordering",
-    desc: "From first quote to final pickup, we walk you through every step. It should feel personal, not like a transaction.",
+    desc: "One contact handles your quote, your proof, and your order from start to finish. No call centers. No confusion. Just a clear process with someone who knows your order.",
   },
   {
     icon: Leaf,
     title: "Minnesota Values",
-    desc: "As proud members of the Boundary Waters Business Coalition, a portion of every order gives back to protecting Minnesota's wilderness.",
+    desc: "As proud members of the Boundary Waters Business Coalition, a portion of every order goes toward protecting the BWCA. It is built into how we do business.",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function WhyUs() {
             More Than Just a Print Shop
           </h2>
           <p className="text-white/55 max-w-xl mx-auto leading-relaxed">
-            We're a small Minnesota business that cares about your order as much as you do.
+            A Twin Cities print shop built for organized bulk orders. Local production, personal service, and pricing that works for groups of every size.
           </p>
         </div>
 

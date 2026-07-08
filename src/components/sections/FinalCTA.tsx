@@ -16,8 +16,7 @@ export default function FinalCTA() {
         </h2>
 
         <p className="text-white/55 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-          Fill out a quick quote request and we&apos;ll reach out fast. No pressure, no complicated
-          process. Just a conversation about your order.
+          Tell us what you need and we&apos;ll send back a clear, no-commitment quote. Most requests get a response within one business day.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

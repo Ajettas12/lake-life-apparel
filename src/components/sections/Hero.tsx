@@ -47,8 +47,8 @@ export default function Hero() {
 
         {/* Sub */}
         <p className="text-lg md:text-xl text-white/75 max-w-xl mb-10 leading-relaxed">
-          Custom apparel for schools, teams, churches, businesses, camps, and more.
-          Screen printed and embroidered within 15 minutes of the Twin Cities.
+          Bulk custom apparel for schools, sports associations, camps, businesses, and community groups.
+          Made locally in the Twin Cities. Pricing that gets better the more you order.
         </p>
 
         {/* CTAs */}
@@ -72,7 +72,7 @@ export default function Hero() {
         <div className="mt-14 flex flex-wrap gap-x-8 gap-y-3">
           {[
             "Made locally in the Twin Cities",
-            "Bulk order specialists",
+            "Better pricing at 100, 250, and 500+ pieces",
             "Giving back to the Boundary Waters",
           ].map((item) => (
             <div key={item} className="flex items-center gap-2">

@@ -11,13 +11,13 @@ export default function MinnesotaMade() {
           </h2>
           <div className="flex flex-col gap-4 text-charcoal-500 leading-relaxed mb-10">
             <p>
-              We&apos;re a Twin Cities business through and through. Every order is made right here
-              in Minnesota, not shipped out of a warehouse across the country.
+              Every order is produced right here in the Twin Cities. Not shipped from a warehouse
+              across the country by someone who has never met you.
             </p>
             <p>
-              When you have a question, you get a real answer. When your timeline is tight,
-              we work with it. If something doesn&apos;t look right, it gets fixed before it
-              ever reaches you.
+              When you need a question answered, you get a real answer. When your timeline is tight,
+              we plan around it. For organized groups with 100, 250, or 500+ pieces, local production
+              makes a bigger difference than most people realize.
             </p>
           </div>
 

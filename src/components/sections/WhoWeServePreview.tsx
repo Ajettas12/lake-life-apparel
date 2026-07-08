@@ -1,36 +1,42 @@
 import Link from "next/link";
-import { GraduationCap, Trophy, Heart, Briefcase, Tent, Users } from "lucide-react";
+import { GraduationCap, Trophy, Tent, Briefcase, Anchor, Users } from "lucide-react";
 
 const audiences = [
   {
     icon: GraduationCap,
-    title: "Schools",
-    desc: "Spirit wear, staff uniforms, class shirts, and event gear. Organized and easy.",
+    title: "Schools & Booster Clubs",
+    desc: "Spirit wear, staff shirts, class tees, booster gear, and homecoming. One school can mean multiple orders every year.",
+    href: "/who-we-serve/schools",
   },
   {
     icon: Trophy,
-    title: "Sports Teams",
-    desc: "Uniforms, warmups, fan apparel, and practice gear built for competitive programs.",
+    title: "Youth Sports",
+    desc: "Player packs, parent gear, tournament merch, and fan apparel for clubs and associations with hundreds of athletes.",
+    href: "/who-we-serve/youth-sports",
   },
   {
-    icon: Heart,
-    title: "Churches",
-    desc: "Mission trips, youth groups, volunteer tees, and congregational events.",
+    icon: Tent,
+    title: "Camps & Churches",
+    desc: "Staff shirts, camper tees, retreat gear, and mission trip apparel. We plan around your timeline because it is not flexible.",
+    href: "/who-we-serve/camps-churches",
   },
   {
     icon: Briefcase,
     title: "Businesses",
-    desc: "Branded workwear, staff polos, and company swag that makes teams look sharp.",
+    desc: "Staff uniforms, branded polos, workwear, and promotional gear that makes your team look consistent.",
+    href: "/who-we-serve/businesses",
   },
   {
-    icon: Tent,
-    title: "Camps",
-    desc: "Staff shirts, camper tees, and seasonal program gear. We know camp timelines.",
+    icon: Anchor,
+    title: "Lake & Marina",
+    desc: "Resort merch, lake association shirts, staff apparel, and event gear with a Minnesota identity behind it.",
+    href: "/who-we-serve/lake-resort-marina",
   },
   {
     icon: Users,
     title: "Community Groups",
-    desc: "Clubs, nonprofits, fundraisers, and local organizations of any size.",
+    desc: "Nonprofits, clubs, fundraisers, and local organizations. Clear process, competitive bulk pricing, no pressure.",
+    href: "/who-we-serve",
   },
 ];
 
@@ -48,23 +54,27 @@ export default function WhoWeServePreview() {
             Built for Groups Like Yours
           </h2>
           <p className="text-charcoal-500 max-w-xl mx-auto leading-relaxed">
-            Whether you're organizing a team, planning a retreat, or outfitting a whole school, we make bulk ordering feel easy.
+            We specialize in organized bulk orders for groups that need apparel done right and delivered on time.
           </p>
         </div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {audiences.map(({ icon: Icon, title, desc }) => (
-            <div
+          {audiences.map(({ icon: Icon, title, desc, href }) => (
+            <Link
               key={title}
-              className="bg-white rounded p-6 border border-stone-200 hover:border-lake-blue-200 hover:shadow-md transition-all group"
+              href={href}
+              className="bg-white rounded p-6 border border-stone-200 hover:border-lake-blue-200 hover:shadow-md transition-all group block"
             >
               <div className="w-10 h-10 rounded-full bg-lake-blue-50 flex items-center justify-center mb-4 group-hover:bg-lake-blue-100 transition-colors">
                 <Icon size={19} className="text-lake-blue-800" />
               </div>
               <h3 className="font-display text-lg font-bold text-charcoal-800 mb-1">{title}</h3>
-              <p className="text-charcoal-500 text-sm leading-relaxed">{desc}</p>
-            </div>
+              <p className="text-charcoal-500 text-sm leading-relaxed mb-3">{desc}</p>
+              <span className="text-lake-blue-800 text-xs font-medium group-hover:underline">
+                See how we work with {title.split(" ")[0].toLowerCase()} →
+              </span>
+            </Link>
           ))}
         </div>
 
@@ -73,7 +83,7 @@ export default function WhoWeServePreview() {
             href="/who-we-serve"
             className="text-lake-blue-800 font-medium text-sm hover:underline"
           >
-            Learn more about who we work with →
+            See all the groups we work with →
           </Link>
         </div>
       </div>
